@@ -1,98 +1,246 @@
+
+Index · HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TDZ Digital</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 20px;
-        }
-        .container {
-            max-width: 600px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 8px;
-        }
-        .tagline {
-            color: #888;
-            font-size: 1.1rem;
-            margin-bottom: 40px;
-        }
-        .app-card {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            border-radius: 16px;
-            padding: 32px;
-            margin-bottom: 32px;
-        }
-        .app-card h2 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-        .app-card p {
-            color: #aaa;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .badge {
-            display: inline-block;
-            background: #2563eb;
-            color: #fff;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: background 0.2s;
-        }
-        .badge:hover { background: #1d4ed8; }
-        .contact {
-            color: #888;
-            margin-top: 40px;
-        }
-        .contact a {
-            color: #60a5fa;
-            text-decoration: none;
-        }
-        .footer {
-            margin-top: 60px;
-            color: #555;
-            font-size: 0.85rem;
-        }
-        .footer a {
-            color: #555;
-            text-decoration: underline;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TDZ Digital — Pre-Sale Home Prep &amp; Roofing Coordination, Lehigh Valley</title>
+<meta name="description" content="TDZ Digital coordinates roofing and exterior repairs for real estate listings in the Lehigh Valley. Send us the inspection report — quote in 48 hours, we handle everything, your deal closes on time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #16283C;
+    --slate: #3D4C5C;
+    --paper: #F4F6F7;
+    --white: #FFFFFF;
+    --line: #D9DEE3;
+    --green: #1E6E52;
+    --green-soft: #E4F0EB;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    font-family: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--paper);
+    color: var(--slate);
+    line-height: 1.6;
+    font-size: 17px;
+  }
+  h1, h2, h3 { font-family: 'Zilla Slab', Georgia, serif; color: var(--ink); line-height: 1.15; }
+  a { color: var(--green); }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+ 
+  /* Header */
+  header {
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+  }
+  .header-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 0;
+  }
+  .logo { font-family: 'Zilla Slab', Georgia, serif; font-weight: 700; font-size: 1.35rem; color: var(--ink); text-decoration: none; letter-spacing: 0.01em; }
+  .logo span { color: var(--green); }
+  .header-cta { font-weight: 600; font-size: 0.95rem; text-decoration: none; color: var(--ink); }
+ 
+  /* Hero */
+  .hero { background: var(--white); padding: 72px 0 64px; }
+  .eyebrow {
+    display: inline-block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--green); margin-bottom: 18px;
+  }
+  .hero h1 { font-size: clamp(2rem, 5.5vw, 3.1rem); font-weight: 700; max-width: 18ch; margin-bottom: 20px; }
+  .hero p.lead { font-size: 1.2rem; max-width: 54ch; margin-bottom: 32px; }
+  .btn {
+    display: inline-block; background: var(--green); color: var(--white);
+    font-weight: 600; text-decoration: none; padding: 14px 28px; border-radius: 6px;
+    transition: background 0.15s ease;
+  }
+  .btn:hover { background: #185A43; }
+  .btn-quiet { display: inline-block; margin-left: 18px; font-weight: 600; color: var(--ink); text-decoration: none; border-bottom: 2px solid var(--line); padding-bottom: 2px; }
+  .btn-quiet:hover { border-color: var(--green); }
+ 
+  /* Shingle divider — signature element */
+  .shingles { display: block; width: 100%; height: 26px; background: var(--white); }
+  .shingles svg { display: block; width: 100%; height: 26px; }
+ 
+  /* Process */
+  .process { padding: 64px 0 24px; }
+  .section-title { font-size: 1.7rem; margin-bottom: 8px; }
+  .section-sub { max-width: 60ch; margin-bottom: 36px; }
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .step {
+    background: var(--white); border: 1px solid var(--line); border-radius: 8px;
+    padding: 26px 24px;
+  }
+  .check {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: var(--green-soft); color: var(--green);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 1rem; margin-bottom: 14px;
+  }
+  .step h3 { font-size: 1.15rem; margin-bottom: 8px; }
+  .step p { font-size: 0.98rem; }
+ 
+  /* Who it's for */
+  .audience { padding: 48px 0; }
+  .audience-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .aud-card { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: 26px 24px; }
+  .aud-card h3 { font-size: 1.15rem; margin-bottom: 8px; }
+  .aud-card p { font-size: 0.98rem; }
+ 
+  /* Promise strip */
+  .promise {
+    background: var(--ink); color: var(--white);
+    padding: 44px 0; margin-top: 24px;
+  }
+  .promise .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+  .promise h2 { color: var(--white); font-size: 1.45rem; max-width: 24ch; }
+  .promise .btn { background: var(--white); color: var(--ink); }
+  .promise .btn:hover { background: var(--paper); }
+ 
+  /* Contact */
+  .contact { padding: 64px 0; text-align: left; }
+  .contact-card {
+    background: var(--white); border: 1px solid var(--line); border-radius: 8px;
+    padding: 32px; display: flex; flex-wrap: wrap; gap: 32px; justify-content: space-between; align-items: center;
+  }
+  .contact-card .lines p { margin-bottom: 6px; font-size: 1.05rem; }
+  .contact-card .lines strong { color: var(--ink); }
+ 
+  /* CampusDrop */
+  .apps { padding: 8px 0 64px; }
+  .app-card {
+    background: var(--white); border: 1px solid var(--line); border-radius: 8px;
+    padding: 26px 24px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between;
+  }
+  .app-card h3 { font-size: 1.15rem; margin-bottom: 4px; }
+  .app-card p { font-size: 0.95rem; max-width: 52ch; }
+  .app-link { font-weight: 600; text-decoration: none; white-space: nowrap; }
+ 
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 28px 0 40px; font-size: 0.85rem; color: #7A8590;
+  }
+  footer a { color: #7A8590; }
+ 
+  @media (max-width: 720px) {
+    .steps, .audience-grid { grid-template-columns: 1fr; }
+    .hero { padding: 52px 0 44px; }
+    .btn-quiet { margin-left: 0; display: block; margin-top: 16px; width: fit-content; }
+  }
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>TDZ Digital</h1>
-        <p class="tagline">Building apps for campus life.</p>
-
-        <div class="app-card">
-            <h2>CampusDrop</h2>
-            <p>The fastest way to find out what's happening on campus. See live events on a map — food, parties, sports, study sessions, and more. Built for college students who don't want to miss out.</p>
-            <a href="#" class="badge">Coming Soon on the App Store</a>
-        </div>
-
-        <p class="contact">Contact: <a href="mailto:thomasdzik@tdzdigital.com">thomasdzik@tdzdigital.com</a></p>
-
-        <div class="footer">
-            <p>&copy; 2026 TDZ Digital LLC. All rights reserved.</p>
-            <p><a href="/privacy">Privacy Policy</a></p>
-        </div>
+ 
+<header>
+  <div class="wrap header-inner">
+    <a class="logo" href="/">TDZ<span>&nbsp;Digital</span></a>
+    <a class="header-cta" href="#contact">Send us an inspection report&nbsp;&rarr;</a>
+  </div>
+</header>
+ 
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Pre-sale home prep &middot; Lehigh Valley, PA</span>
+    <h1>A flagged roof shouldn't hold up your closing.</h1>
+    <p class="lead">TDZ Digital coordinates roofing and exterior repairs for real estate listings. Send us the inspection report — we return a quote from a licensed local contractor within 48 hours and manage the job start to finish. You never chase a contractor. Your deal closes on time.</p>
+    <a class="btn" href="#contact">Get a 48-hour quote</a>
+    <a class="btn-quiet" href="#how">How it works</a>
+  </div>
+</section>
+ 
+<div class="shingles" aria-hidden="true">
+  <svg viewBox="0 0 880 26" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0 H880 V10 H840 V18 H800 V10 H760 V18 H720 V10 H680 V18 H640 V10 H600 V18 H560 V10 H520 V18 H480 V10 H440 V18 H400 V10 H360 V18 H320 V10 H280 V18 H240 V10 H200 V18 H160 V10 H120 V18 H80 V10 H40 V18 H0 Z" fill="#FFFFFF"/>
+    <path d="M0 18 H40 V10 H80 V18 H120 V10 H160 V18 H200 V10 H240 V18 H280 V10 H320 V18 H360 V10 H400 V18 H440 V10 H480 V18 H520 V10 H560 V18 H600 V10 H640 V18 H680 V10 H720 V18 H760 V10 H800 V18 H840 V10 H880 V18" fill="none" stroke="#D9DEE3" stroke-width="1.5"/>
+  </svg>
+</div>
+ 
+<section class="process" id="how">
+  <div class="wrap">
+    <h2 class="section-title">How it works</h2>
+    <p class="section-sub">Three steps, one point of contact. We work with established, licensed Lehigh Valley roofing contractors — you deal only with us.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="check">1</div>
+        <h3>Send the report</h3>
+        <p>Text or email us the inspection report — or just the pages that flag roof, gutter, or exterior issues.</p>
+      </div>
+      <div class="step">
+        <div class="check">2</div>
+        <h3>Quote in 48 hours</h3>
+        <p>We get a licensed contractor to the property and return a written quote within two business days.</p>
+      </div>
+      <div class="step">
+        <div class="check">&#10003;</div>
+        <h3>We coordinate, it closes</h3>
+        <p>Scheduling, crew updates, completion photos — handled. You get the paperwork your closing needs, on time.</p>
+      </div>
     </div>
+  </div>
+</section>
+ 
+<section class="audience">
+  <div class="wrap">
+    <div class="audience-grid">
+      <div class="aud-card">
+        <h3>For real estate agents</h3>
+        <p>Condition problems kill timelines. We absorb the whole repair process so your listing passes inspection and your seller stays calm — at no cost to you. Free pre-listing exterior walkthroughs available.</p>
+      </div>
+      <div class="aud-card">
+        <h3>For home inspectors &amp; adjusters</h3>
+        <p>When you flag a roof, your client needs a next step. Hand them one name that answers the phone, shows up, and won't reflect badly on you. Every job we coordinate is documented with photos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<section class="promise">
+  <div class="wrap">
+    <h2>Every message answered within one hour, seven days a week.</h2>
+    <a class="btn" href="#contact">Put us to the test</a>
+  </div>
+</section>
+ 
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2 class="section-title">Talk to us</h2>
+    <p class="section-sub">Send an inspection report, ask about a free pre-listing walkthrough, or just find out how it works.</p>
+    <div class="contact-card">
+      <div class="lines">
+        <p><strong>Call or text:</strong> <a href="tel:+16105550100">(610) 555-0100</a></p>
+        <p><strong>Email:</strong> <a href="mailto:thomasdzik@tdzdigital.com">thomasdzik@tdzdigital.com</a></p>
+        <p><strong>Serving:</strong> Allentown, Bethlehem, Easton &amp; the greater Lehigh Valley</p>
+      </div>
+      <a class="btn" href="mailto:thomasdzik@tdzdigital.com?subject=Inspection%20report%20%E2%80%94%2048-hour%20quote">Email an inspection report</a>
+    </div>
+  </div>
+</section>
+ 
+<section class="apps">
+  <div class="wrap">
+    <div class="app-card">
+      <div>
+        <h3>Also from TDZ Digital: CampusDrop</h3>
+        <p>Live campus events on a map — food, sports, study sessions and more. Built for college students who don't want to miss out.</p>
+      </div>
+      <a class="app-link" href="https://apps.apple.com/app/id6776010971">Get it on the App&nbsp;Store&nbsp;&rarr;</a>
+    </div>
+  </div>
+</section>
+ 
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 TDZ Digital LLC. All rights reserved. &middot; <a href="/privacy">Privacy Policy</a></p>
+  </div>
+</footer>
+ 
 </body>
 </html>
+ 
